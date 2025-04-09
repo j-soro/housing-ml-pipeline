@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "housing-ml-pipeline"
+version = "0.1.0"
+description = "Housing prediction ETL service"
+authors = ["Joaquín Soro <contact@jsoro.dev>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+dagster = "^1.10.9"
+dagit = "^1.10.9"
+pandas = "^2.2.3"
+numpy = "^2.2.4"
+scikit-learn = "^1.6.1"
+joblib = "^1.4.2"
+sqlalchemy = "^2.0.40"
+asyncpg = "^0.30.0"
+pydantic = "^2.11.3"
+dependency-injector = "^4.46.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.4"
+mypy = "^1.15.0"
+pre-commit = "^4.2.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-asyncio = "^0.26.0"
+pytest-cov = "^6.1.1"
+httpx = "^0.28.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+lint.select = ["E", "F", "B", "I"]
+lint.ignore = []
+line-length = 88
+target-version = "py311"  # Updated to match our Python version
+
+[tool.mypy]
+python_version = "3.11"  # Updated to match our Python version
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+strict_optional = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v -ra --strict-markers --tb=short"
+markers = [
+    "integration: marks tests as integration tests (deselect with '-m \"not integration\"')",
+]
