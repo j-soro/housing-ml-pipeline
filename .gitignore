@@ -34,3 +34,7 @@ ENV/
 
 # Misc
 .DS_Store
+input_data
+
+# Dagster
+.tmp_dagster*
