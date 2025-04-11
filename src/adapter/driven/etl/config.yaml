@@ -1,0 +1,5 @@
+resources:
+  postgres:
+    url: ${DATABASE_URL}
+  model:
+    path: ${MODEL_PATH}
