@@ -23,6 +23,7 @@ wheels/
 # Virtual Environment
 .env
 .venv
+env/
 venv/
 ENV/
 
@@ -31,6 +32,19 @@ ENV/
 .vscode/
 *.swp
 *.swo
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Linting/Formatting
+.mypy_cache/
+.ruff_cache/
+
+# Project specific
+models/
+*.joblib
 
 # Misc
 .DS_Store

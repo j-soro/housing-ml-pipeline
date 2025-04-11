@@ -18,7 +18,7 @@ numpy = "1.23.4"
 scikit-learn = "1.1.2"
 joblib = "1.2.0"
 sqlalchemy = "^2.0.40"
-asyncpg = "^0.30.0"
+psycopg2-binary = "^2.9.9"
 pydantic = "^2.11.3"
 dependency-injector = "^4.46.0"
 scipy = "1.9.2"
@@ -31,6 +31,7 @@ threadpoolctl = "3.1.0"
 ruff = "^0.0.292"
 mypy = "^0.991"
 pre-commit = "^3.3.3"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
@@ -45,7 +46,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.ruff]
 lint.select = ["E", "F", "B", "I"]
 lint.ignore = []
-line-length = 88
+line-length = 100
 target-version = "py39"
 
 [tool.mypy]
@@ -59,6 +60,7 @@ warn_redundant_casts = true
 warn_unused_ignores = true
 warn_return_any = true
 strict_optional = true
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 asyncio_mode = "strict"
@@ -71,4 +73,4 @@ markers = [
 ]
 
 [tool.dagster]
-module_name = "housing_pipeline"
+module_name = "src.adapter.driven.etl.job"
