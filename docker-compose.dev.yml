@@ -1,0 +1,84 @@
+services:
+  postgres:
+    extends:
+      file: docker-compose.yml
+      service: postgres
+    ports:
+      - "5432:5432"  # Expose postgres for local DB tools
+    volumes:
+      - ./data:/data  # For easy data import/export
+      - postgres_data:/var/lib/postgresql/data
+
+  dagster-webserver:
+    extends:
+      file: docker-compose.yml
+      service: dagster-webserver
+    volumes:
+      - ./src:/app/src:cached  # For hot reloading
+      - ./dagster.yaml:/opt/dagster/dagster_home/dagster.yaml:cached
+      - ./workspace.yaml:/opt/dagster/dagster_home/workspace.yaml:cached
+      - ~/.dagster:/opt/dagster/dagster_home  # Persist Dagster data locally
+      - ./models:/app/models:cached  # Mount local models directory
+    environment:
+      PYTHONPATH: /app
+      DAGSTER_DEBUG: 1  # Enable debug mode
+      DAGSTER_DISABLE_TELEMETRY: 1  # Disable telemetry in development
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+    ports:
+      - "3000:3000"  # Dagster UI
+      - "9229:9229"  # Debug port
+
+  dagster-daemon:
+    extends:
+      file: docker-compose.yml
+      service: dagster-daemon
+    volumes:
+      - ./src:/app/src:cached
+      - ./dagster.yaml:/opt/dagster/dagster_home/dagster.yaml:cached
+      - ./workspace.yaml:/opt/dagster/dagster_home/workspace.yaml:cached
+      - ~/.dagster:/opt/dagster/dagster_home
+      - ./models:/app/models:cached  # Mount local models directory
+    environment:
+      PYTHONPATH: /app
+      DAGSTER_DEBUG: 1
+      DAGSTER_DISABLE_TELEMETRY: 1
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+
+  app:
+    extends:
+      file: docker-compose.yml
+      service: app
+    volumes:
+      - ./src:/app/src:cached  # For hot reloading
+      - ./tests:/app/tests:cached  # For running tests
+      - ./.env:/app/.env:cached  # Local environment variables
+      - ./models:/app/models:cached  # Mount local models directory
+    environment:
+      PYTHONPATH: /app
+      DEBUG: 1
+      LOG_LEVEL: DEBUG
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+      DAGSTER_WEBSERVER_URL: http://dagster-webserver:3000
+    ports:
+      - "8000:8000"  # API
+      - "5678:5678"  # Python debugger port
+    command: poetry run uvicorn "src.adapter.driving.fastapi.app:app" --host 0.0.0.0 --port 8000 --reload --reload-dir /app/src --log-level debug
+
+volumes:
+  postgres_data:
+  dagster_home:

@@ -1,0 +1,90 @@
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  dagster-daemon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: poetry run dagster-daemon run -w /opt/dagster/dagster_home/workspace.yaml
+    environment:
+      DAGSTER_HOME: /opt/dagster/dagster_home
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+    volumes:
+      - ./src:/app/src
+      - ./dagster.yaml:/opt/dagster/dagster_home/dagster.yaml
+      - ./workspace.yaml:/opt/dagster/dagster_home/workspace.yaml
+      - dagster_home:/opt/dagster/dagster_home
+      - model_artifacts:/app/models
+    depends_on:
+      postgres:
+        condition: service_started
+    restart: unless-stopped
+
+  dagster-webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: poetry run dagster-webserver -h 0.0.0.0 -p 3000 -w /opt/dagster/dagster_home/workspace.yaml
+    ports:
+      - "3000:3000"
+    environment:
+      DAGSTER_HOME: /opt/dagster/dagster_home
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+    volumes:
+      - ./src:/app/src
+      - ./dagster.yaml:/opt/dagster/dagster_home/dagster.yaml
+      - ./workspace.yaml:/opt/dagster/dagster_home/workspace.yaml
+      - dagster_home:/opt/dagster/dagster_home
+      - model_artifacts:/app/models
+    depends_on:
+      postgres:
+        condition: service_started
+      dagster-daemon:
+        condition: service_started
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: poetry run uvicorn "src.adapter.driving.fastapi.app:app" --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-housing}
+      MODEL_PATH: /app/models/model.joblib
+    volumes:
+      - ./src:/app/src
+      - model_artifacts:/app/models
+    depends_on:
+      postgres:
+        condition: service_started
+      dagster-webserver:
+        condition: service_started
+
+volumes:
+  postgres_data:
+  dagster_home:
+  model_artifacts:
