@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Optional, Protocol
 
 from src.core.domain.entities.housing_record import HousingRecord
+from src.core.domain.entities.prediction import PredictionStatus
 
 
 class PredictionRequestProtocol(Protocol):
@@ -27,11 +28,8 @@ class PredictionResponseProtocol(Protocol):
     """Protocol defining what we expect from a prediction response."""
 
     run_id: str
-    status: str
+    status: PredictionStatus
     prediction: Optional[float]
-    error: Optional[str]
-    submitted_at: str
-    completed_at: Optional[str]
 
 
 class PredictionStatusProtocol(Protocol):

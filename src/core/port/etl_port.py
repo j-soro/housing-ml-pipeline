@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Literal, Optional, Protocol, TypeVar
+from typing import Literal, Optional, Protocol
 
 from src.core.domain.entities.housing_record import HousingRecord
 
@@ -14,35 +14,31 @@ class PipelineRunProtocol(Protocol):
     error: Optional[str]
 
 
-# Type variable bounded by our protocol
-RunT = TypeVar("RunT", bound=PipelineRunProtocol, covariant=True)
-
-
-class ETLPort(Protocol[RunT]):
+class ETLPort(Protocol):
     """Protocol defining the interface for ETL pipeline operations."""
 
-    async def start_prediction_pipeline(self, record: HousingRecord) -> RunT:
+    async def start_prediction_pipeline(self, record: HousingRecord) -> str:
         """Start a prediction pipeline for a housing record.
 
         Args:
             record: The housing record to process
 
         Returns:
-            Pipeline run information for tracking
+            str: The run ID for tracking the pipeline
 
         Raises:
             Exception: If there's an error starting the pipeline
         """
         ...
 
-    async def get_pipeline_status(self, run_id: str) -> RunT:
+    async def get_pipeline_status(self, run_id: str) -> str:
         """Get the status of a pipeline run.
 
         Args:
             run_id: The ID of the pipeline run to check
 
         Returns:
-            Current pipeline run status and metadata
+            str: "pending", "running", "completed", or "failed"
 
         Raises:
             ValueError: If the run_id is invalid

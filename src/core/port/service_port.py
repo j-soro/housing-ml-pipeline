@@ -1,5 +1,5 @@
 """Service port definitions."""
-from typing import Protocol
+from typing import Protocol, Union
 
 from src.core.domain.entities.housing_record import HousingRecord
 from src.core.domain.entities.prediction import Prediction
@@ -19,21 +19,13 @@ class PredictionServicePort(Protocol):
         """
         ...
 
-    async def get_prediction_result(self, run_id: str) -> Prediction:
+    async def get_prediction_result(self, run_id: str) -> Union[Prediction, str]:
         """Get the result of a prediction request.
 
         Args:
-            run_id: Dagster run ID of the request to check
+            run_id: Pipeline run ID of the request to check
 
         Returns:
-            Prediction: The prediction result
-        """
-        ...
-
-    async def trigger_etl_pipeline(self, record_id: str) -> None:
-        """Trigger the ETL pipeline for a record.
-
-        Args:
-            record_id: ID of the record to process
+            Union[Prediction, str]: Either the prediction result or the pipeline status
         """
         ...
