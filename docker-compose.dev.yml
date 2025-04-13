@@ -87,6 +87,36 @@ services:
     networks:
       - housing-network
 
+  prometheus:
+    extends:
+      file: docker-compose.yml
+      service: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - housing-network
+
+  grafana:
+    extends:
+      file: docker-compose.yml
+      service: grafana
+    ports:
+      - "3001:3000"  # Expose Grafana UI
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_AUTH_ANONYMOUS_ENABLED=true  # Enable anonymous access for development
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin  # Give anonymous users admin rights
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - housing-network
+
 networks:
   housing-network:
     driver: bridge
@@ -94,3 +124,5 @@ networks:
 volumes:
   postgres_data:
   dagster_home:
+  grafana_data:
+  prometheus_data:

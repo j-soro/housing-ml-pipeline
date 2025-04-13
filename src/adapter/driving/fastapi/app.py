@@ -10,6 +10,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from src.adapter.driving.fastapi.handler import FastAPIHandler
+from src.adapter.driving.fastapi.metrics import metrics
+from src.adapter.driving.fastapi.middleware import PrometheusMiddleware
 from src.adapter.driving.fastapi.models import (
     ErrorResponse,
     PredictionCompletedResponse,
@@ -57,6 +59,9 @@ app.add_middleware(
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
 )
+
+# Add Prometheus middleware
+app.add_middleware(PrometheusMiddleware)
 
 # Set lifespan context
 app.lifespan = lifespan
@@ -110,3 +115,9 @@ async def get_prediction(run_id: str, handler: InputPort = handler_dependency) -
 async def health_check():
     """Health check endpoint."""
     return {"status": "healthy"}
+
+
+@app.get("/metrics")
+async def metrics_endpoint():
+    """Prometheus metrics endpoint."""
+    return metrics()
