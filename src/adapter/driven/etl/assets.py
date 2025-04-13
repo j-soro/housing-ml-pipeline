@@ -284,7 +284,7 @@ def prediction_result(
     context,
     model: ModelResource,
     prepared_data: Dict[str, Any],
-) -> Dict[str, Any]:
+) -> List[float]:
     """Asset that generates predictions using the model.
 
     This asset takes the prepared data and generates predictions using the model.
@@ -295,7 +295,7 @@ def prediction_result(
         prepared_data: The prepared data as a dictionary
 
     Returns:
-        A dictionary containing the predictions
+        A list containing the predictions as floats
 
     Raises:
         PredictionError: If the prediction fails
@@ -308,7 +308,7 @@ def prediction_result(
         prediction = model.predict(prepared_data)
 
         context.log.info(f"Prediction generated successfully: {prediction}")
-        return {"prediction": prediction[0]}
+        return prediction
 
     except Exception as e:
         context.log.error(f"Error generating prediction: {str(e)}")
