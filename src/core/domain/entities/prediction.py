@@ -4,6 +4,7 @@ from __future__ import annotations
 from datetime import datetime
 from enum import Enum
 from typing import Optional
+from uuid import uuid4
 
 from pydantic import BaseModel, Field
 
@@ -23,6 +24,7 @@ class PredictionStatus(str, Enum):
 class Prediction(BaseModel):
     """Prediction model."""
 
+    id: str = Field(default_factory=lambda: str(uuid4()), description="ID of the prediction")
     record_id: str = Field(description="ID of the housing record this prediction is for")
     value: float = Field(description="Predicted house price value")
     created_at: datetime = Field(description="When the prediction was created")
@@ -34,24 +36,3 @@ class Prediction(BaseModel):
     )
     error: Optional[str] = Field(None, description="Error message if prediction failed")
     run_id: Optional[str] = Field(None, description="Dagster run ID that generated this prediction")
-
-    @classmethod
-    def create(
-        cls,
-        prediction_id: str,
-        status: PredictionStatus = PredictionStatus.PENDING,
-        value: Optional[float] = None,
-        record: Optional[HousingRecord] = None,
-        error: Optional[str] = None,
-        run_id: Optional[str] = None,
-    ) -> "Prediction":
-        """Create a new Prediction instance."""
-        return cls(
-            record_id=prediction_id,
-            status=status,
-            value=value,
-            record=record,
-            created_at=datetime.utcnow(),
-            error=error,
-            run_id=run_id,
-        )
