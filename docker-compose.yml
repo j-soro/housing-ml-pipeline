@@ -9,6 +9,14 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-user} -d ${POSTGRES_DB:-housing}"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    networks:
+      - housing-network
 
   dagster-daemon:
     build:
@@ -32,10 +40,9 @@ services:
       - ./workspace.yaml:/opt/dagster/dagster_home/workspace.yaml:cached
       - dagster_home:/opt/dagster/dagster_home
       - ./models:/app/models:cached
-    depends_on:
-      postgres:
-        condition: service_started
     restart: unless-stopped
+    networks:
+      - housing-network
 
   dagster-webserver:
     build:
@@ -62,10 +69,10 @@ services:
       - dagster_home:/opt/dagster/dagster_home
       - ./models:/app/models:cached
     depends_on:
-      postgres:
-        condition: service_started
       dagster-daemon:
         condition: service_started
+    networks:
+      - housing-network
 
   app:
     build:
@@ -90,9 +97,21 @@ services:
       - ./models:/app/models:cached
     depends_on:
       postgres:
-        condition: service_started
+        condition: service_healthy
       dagster-webserver:
         condition: service_started
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    networks:
+      - housing-network
+
+networks:
+  housing-network:
+    driver: bridge
 
 volumes:
   postgres_data:

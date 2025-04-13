@@ -11,6 +11,7 @@ RUN mkdir -p /app/models /app/src /opt/dagster/dagster_home
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Poetry
