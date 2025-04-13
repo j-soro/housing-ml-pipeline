@@ -70,6 +70,7 @@ python_files = ["test_*.py"]
 addopts = "-v -ra --strict-markers --tb=short"
 markers = [
     "integration: marks tests as integration tests (deselect with '-m \"not integration\"')",
+    "dagster: marks tests as dagster tests",
 ]
 
 [tool.dagster]

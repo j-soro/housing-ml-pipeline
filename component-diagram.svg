@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1724px" preserveAspectRatio="none" style="width:4209px;height:1724px;background:#FFFFFF;" version="1.1" viewBox="0 0 4209 1724" width="4209px" zoomAndPan="magnify"><defs/><g><!--MD5=[56958750488fff09e2ce92554dc9497d]
+cluster External Systems--><g id="cluster_External Systems"><path d="M3620.5,834.6885 L3839.5,834.6885 A3.75,3.75 0 0 1 3842,837.1885 L3849,866.2979 L3917.5,866.2979 A2.5,2.5 0 0 1 3920,868.7979 L3920,937.1885 A2.5,2.5 0 0 1 3917.5,939.6885 L3620.5,939.6885 A2.5,2.5 0 0 1 3618,937.1885 L3618,837.1885 A2.5,2.5 0 0 1 3620.5,834.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3618" x2="3849" y1="866.2979" y2="866.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="218" x="3622" y="857.1094">External Systems</text></g><!--MD5=[8e51a9000d72db887aad89684acee33a]
+cluster Driving Adapters--><g id="cluster_Driving Adapters"><path d="M13.5,12.6885 L227.5,12.6885 A3.75,3.75 0 0 1 230,15.1885 L237,44.2979 L1417.5,44.2979 A2.5,2.5 0 0 1 1420,46.7979 L1420,391.1885 A2.5,2.5 0 0 1 1417.5,393.6885 L13.5,393.6885 A2.5,2.5 0 0 1 11,391.1885 L11,15.1885 A2.5,2.5 0 0 1 13.5,12.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="11" x2="237" y1="44.2979" y2="44.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="213" x="15" y="35.1094">Driving Adapters</text></g><!--MD5=[70a5a10d56d5ca50eb8d68166f9a72bc]
+cluster API Models--><g id="cluster_API Models"><path d="M184.5,64.6885 L323.5,64.6885 A3.75,3.75 0 0 1 326,67.1885 L333,96.2979 L1393.5,96.2979 A2.5,2.5 0 0 1 1396,98.7979 L1396,158.1885 A2.5,2.5 0 0 1 1393.5,160.6885 L184.5,160.6885 A2.5,2.5 0 0 1 182,158.1885 L182,67.1885 A2.5,2.5 0 0 1 184.5,64.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="182" x2="333" y1="96.2979" y2="96.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="138" x="186" y="87.1094">API Models</text></g><!--MD5=[3b1ee5cbec98652c373b007eb25d01f7]
+cluster Core Application--><g id="cluster_Core Application"><path d="M1446.5,193.6885 L1655.5,193.6885 A3.75,3.75 0 0 1 1658,196.1885 L1665,225.2979 L2832.5,225.2979 A2.5,2.5 0 0 1 2835,227.7979 L2835,980.6885 A2.5,2.5 0 0 1 2832.5,983.1885 L1446.5,983.1885 A2.5,2.5 0 0 1 1444,980.6885 L1444,196.1885 A2.5,2.5 0 0 1 1446.5,193.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="1444" x2="1665" y1="225.2979" y2="225.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="208" x="1448" y="216.1094">Core Application</text></g><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><g id="cluster_Domain"><path d="M1470.5,245.6885 L1566.5,245.6885 A3.75,3.75 0 0 1 1569,248.1885 L1576,277.2979 L2317.5,277.2979 A2.5,2.5 0 0 1 2320,279.7979 L2320,956.6885 A2.5,2.5 0 0 1 2317.5,959.1885 L1470.5,959.1885 A2.5,2.5 0 0 1 1468,956.6885 L1468,248.1885 A2.5,2.5 0 0 1 1470.5,245.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="1468" x2="1576" y1="277.2979" y2="277.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="95" x="1472" y="268.1094">Domain</text></g><!--MD5=[114f4823940f317c08f5bedd633c9afd]
+cluster Entities--><g id="cluster_Entities"><path d="M1494.5,453.6885 L1592.5,453.6885 A3.75,3.75 0 0 1 1595,456.1885 L1602,485.2979 L1817.5,485.2979 A2.5,2.5 0 0 1 1820,487.7979 L1820,757.1885 A2.5,2.5 0 0 1 1817.5,759.6885 L1494.5,759.6885 A2.5,2.5 0 0 1 1492,757.1885 L1492,456.1885 A2.5,2.5 0 0 1 1494.5,453.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="1492" x2="1602" y1="485.2979" y2="485.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="97" x="1496" y="476.1094">Entities</text></g><!--MD5=[54f4c80610dbcc019aec53e235a3f005]
+cluster Value Objects--><g id="cluster_Value Objects"><path d="M1647.5,839.1885 L1822.5,839.1885 A3.75,3.75 0 0 1 1825,841.6885 L1832,870.7979 L1832.5,870.7979 A2.5,2.5 0 0 1 1835,873.2979 L1835,932.6885 A2.5,2.5 0 0 1 1832.5,935.1885 L1647.5,935.1885 A2.5,2.5 0 0 1 1645,932.6885 L1645,841.6885 A2.5,2.5 0 0 1 1647.5,839.1885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="1645" x2="1832" y1="870.7979" y2="870.7979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="174" x="1649" y="861.6094">Value Objects</text></g><!--MD5=[e5f667b5311306cc91fbdfbce3163ce7]
+cluster Exceptions--><g id="cluster_Exceptions"><path d="M1494.5,297.6885 L1631.5,297.6885 A3.75,3.75 0 0 1 1634,300.1885 L1641,329.2979 L2293.5,329.2979 A2.5,2.5 0 0 1 2296,331.7979 L2296,391.1885 A2.5,2.5 0 0 1 2293.5,393.6885 L1494.5,393.6885 A2.5,2.5 0 0 1 1492,391.1885 L1492,300.1885 A2.5,2.5 0 0 1 1494.5,297.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="1492" x2="1641" y1="329.2979" y2="329.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="136" x="1496" y="320.1094">Exceptions</text></g><!--MD5=[d13fcb855108a23cf11211063221295a]
+cluster Application Services--><g id="cluster_Application Services"><path d="M2389.5,297.6885 L2646.5,297.6885 A3.75,3.75 0 0 1 2649,300.1885 L2656,329.2979 L2656.5,329.2979 A2.5,2.5 0 0 1 2659,331.7979 L2659,391.1885 A2.5,2.5 0 0 1 2656.5,393.6885 L2389.5,393.6885 A2.5,2.5 0 0 1 2387,391.1885 L2387,300.1885 A2.5,2.5 0 0 1 2389.5,297.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="2387" x2="2656" y1="329.2979" y2="329.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="256" x="2391" y="320.1094">Application Services</text></g><!--MD5=[33547aab9a37fff93e77e1ef2ce5d818]
+cluster Ports--><g id="cluster_Ports"><path d="M2346.5,442.6885 L2413.5,442.6885 A3.75,3.75 0 0 1 2416,445.1885 L2423,474.2979 L2808.5,474.2979 A2.5,2.5 0 0 1 2811,476.7979 L2811,558.1885 A2.5,2.5 0 0 1 2808.5,560.6885 L2346.5,560.6885 A2.5,2.5 0 0 1 2344,558.1885 L2344,445.1885 A2.5,2.5 0 0 1 2346.5,442.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="2344" x2="2423" y1="474.2979" y2="474.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="66" x="2348" y="465.1094">Ports</text></g><!--MD5=[dc4cd83679ce1766c9311a30f7decc12]
+cluster Driven Adapters--><g id="cluster_Driven Adapters"><path d="M2861.5,609.6885 L3066.5,609.6885 A3.75,3.75 0 0 1 3069,612.1885 L3076,641.2979 L4199.5,641.2979 A2.5,2.5 0 0 1 4202,643.7979 L4202,783.1885 A2.5,2.5 0 0 1 4199.5,785.6885 L2861.5,785.6885 A2.5,2.5 0 0 1 2859,783.1885 L2859,612.1885 A2.5,2.5 0 0 1 2861.5,609.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="2859" x2="3076" y1="641.2979" y2="641.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="204" x="2863" y="632.1094">Driven Adapters</text></g><!--MD5=[b349910e2de86d56145575a952d60d49]
+cluster Storage Adapters--><g id="cluster_Storage Adapters"><path d="M3763.5,661.6885 L3985.5,661.6885 A3.75,3.75 0 0 1 3988,664.1885 L3995,693.2979 L4175.5,693.2979 A2.5,2.5 0 0 1 4178,695.7979 L4178,759.1885 A2.5,2.5 0 0 1 4175.5,761.6885 L3763.5,761.6885 A2.5,2.5 0 0 1 3761,759.1885 L3761,664.1885 A2.5,2.5 0 0 1 3763.5,661.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3761" x2="3995" y1="693.2979" y2="693.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="221" x="3765" y="684.1094">Storage Adapters</text></g><!--MD5=[d2431652890dece5f7b82ed8c792a475]
+cluster ML Adapters--><g id="cluster_ML Adapters"><path d="M2885.5,661.6885 L3044.5,661.6885 A3.75,3.75 0 0 1 3047,664.1885 L3054,693.2979 L3289.5,693.2979 A2.5,2.5 0 0 1 3292,695.7979 L3292,759.1885 A2.5,2.5 0 0 1 3289.5,761.6885 L2885.5,761.6885 A2.5,2.5 0 0 1 2883,759.1885 L2883,664.1885 A2.5,2.5 0 0 1 2885.5,661.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="2883" x2="3054" y1="693.2979" y2="693.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="158" x="2887" y="684.1094">ML Adapters</text></g><!--MD5=[a8c1003209f6db21e565c94d78b971ef]
+cluster ETL Adapters--><g id="cluster_ETL Adapters"><path d="M3318.5,661.6885 L3485.5,661.6885 A3.75,3.75 0 0 1 3488,664.1885 L3495,693.2979 L3734.5,693.2979 A2.5,2.5 0 0 1 3737,695.7979 L3737,759.1885 A2.5,2.5 0 0 1 3734.5,761.6885 L3318.5,761.6885 A2.5,2.5 0 0 1 3316,759.1885 L3316,664.1885 A2.5,2.5 0 0 1 3318.5,661.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3316" x2="3495" y1="693.2979" y2="693.2979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="166" x="3320" y="684.1094">ETL Adapters</text></g><!--MD5=[ed15284c4a5de4e34be12c8d4a512a95]
+cluster Dagster Pipeline--><g id="cluster_Dagster Pipeline"><path d="M3097.5,839.1885 L3307.5,839.1885 A3.75,3.75 0 0 1 3310,841.6885 L3317,870.7979 L3558.5,870.7979 A2.5,2.5 0 0 1 3561,873.2979 L3561,1714.6885 A2.5,2.5 0 0 1 3558.5,1717.1885 L3097.5,1717.1885 A2.5,2.5 0 0 1 3095,1714.6885 L3095,841.6885 A2.5,2.5 0 0 1 3097.5,839.1885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3095" x2="3317" y1="870.7979" y2="870.7979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="209" x="3099" y="861.6094">Dagster Pipeline</text></g><!--MD5=[60819b06c4963d58e0441d146e469421]
+cluster Assets--><g id="cluster_Assets"><path d="M3121.5,1016.1885 L3204.5,1016.1885 A3.75,3.75 0 0 1 3207,1018.6885 L3214,1047.7979 L3467.5,1047.7979 A2.5,2.5 0 0 1 3470,1050.2979 L3470,1545.6885 A2.5,2.5 0 0 1 3467.5,1548.1885 L3121.5,1548.1885 A2.5,2.5 0 0 1 3119,1545.6885 L3119,1018.6885 A2.5,2.5 0 0 1 3121.5,1016.1885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3119" x2="3214" y1="1047.7979" y2="1047.7979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="82" x="3123" y="1038.6094">Assets</text></g><!--MD5=[8a76c85c9bda36b8961814e40de163a2]
+cluster Resources--><g id="cluster_Resources"><path d="M3121.5,1597.1885 L3250.5,1597.1885 A3.75,3.75 0 0 1 3253,1599.6885 L3260,1628.7979 L3534.5,1628.7979 A2.5,2.5 0 0 1 3537,1631.2979 L3537,1690.6885 A2.5,2.5 0 0 1 3534.5,1693.1885 L3121.5,1693.1885 A2.5,2.5 0 0 1 3119,1690.6885 L3119,1599.6885 A2.5,2.5 0 0 1 3121.5,1597.1885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="3119" x2="3260" y1="1628.7979" y2="1628.7979"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="128" x="3123" y="1619.6094">Resources</text></g><!--MD5=[d5b747924e785dadf08f5bbef2657eca]
+entity PostgresDB--><g id="elem_PostgresDB"><path d="M3802.5,888.6885 C3802.5,878.6885 3853,878.6885 3853,878.6885 C3853,878.6885 3903.5,878.6885 3903.5,888.6885 L3903.5,913.9854 C3903.5,923.9854 3853,923.9854 3853,923.9854 C3853,923.9854 3802.5,923.9854 3802.5,913.9854 L3802.5,888.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><path d="M3802.5,888.6885 C3802.5,898.6885 3853,898.6885 3853,898.6885 C3853,898.6885 3903.5,898.6885 3903.5,888.6885 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="81" x="3812.5" y="915.6836">PostgreSQL</text></g><!--MD5=[5d81690032d6d96d5b470f68daadba9e]
+entity DagsterPipeline--><g id="elem_DagsterPipeline"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="133" x="3634.5" y="883.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="113" x="3644.5" y="906.1836">Dagster Pipeline</text></g><!--MD5=[645d8587175d8f7ad110cd370775931d]
+entity API--><g id="elem_API"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="136" x="27" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="116" x="37" y="131.6836">FastAPI REST API</text></g><!--MD5=[a59b687cb35fdfab55634fb65dbea243]
+entity Handler--><g id="elem_Handler"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="127" x="466.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="107" x="476.5" y="364.6836">FastAPI Handler</text></g><!--MD5=[4d0f57979ad0b62c9bfa1c5cdc8d1078]
+entity APIRequest--><g id="elem_APIRequest"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="148" x="198" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="208" y="131.6836">PredictionRequest</text></g><!--MD5=[de17bdfaaffa5015b4faab31c7991e16]
+entity SubmissionResponse--><g id="elem_SubmissionResponse"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="240" x="381" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="220" x="391" y="131.6836">PredictionSubmissionResponse</text></g><!--MD5=[eec12ef95eb7ed8962dce41af4986156]
+entity PendingResponse--><g id="elem_PendingResponse"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="217" x="656.5" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="666.5" y="131.6836">PredictionPendingResponse</text></g><!--MD5=[6a0d501b7c9c02ba6aecac2c9ea078d6]
+entity CompletedResponse--><g id="elem_CompletedResponse"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="236" x="909" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="216" x="919" y="131.6836">PredictionCompletedResponse</text></g><!--MD5=[03702b62f7b4547f9fe9ad880488d2c7]
+entity FailedResponse--><g id="elem_FailedResponse"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="200" x="1180" y="108.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="1190" y="131.6836">PredictionFailedResponse</text></g><!--MD5=[c0b1bb6f6332c89bb18f54af7754a7f4]
+entity HousingRecord--><g id="elem_HousingRecord"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="127" x="1676.5" y="707.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="107" x="1686.5" y="730.6836">HousingRecord</text></g><!--MD5=[fbdeb607401388cae152d806c04097a6]
+entity Prediction--><g id="elem_Prediction"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="89" x="1512.5" y="497.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="69" x="1522.5" y="520.6836">Prediction</text></g><!--MD5=[fa9ef5c0321491d5bd69e2b776d6e775]
+entity PredictionStatus--><g id="elem_PredictionStatus"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="133" x="1508.5" y="707.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="113" x="1518.5" y="730.6836">PredictionStatus</text></g><!--MD5=[d966cc2f05daffcb3e94213d7fc10975]
+entity OceanProximity--><g id="elem_OceanProximity"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="126" x="1677" y="883.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="1687" y="906.1836">OceanProximity</text></g><!--MD5=[7a3ff5580ff33b3f650ccfef49ce0a3a]
+entity ValidationError--><g id="elem_ValidationError"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="151" x="1845.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="131" x="1855.5" y="364.6836">DataValidationError</text></g><!--MD5=[e479406edc7acd409ee80426e90507a7]
+entity CleaningError--><g id="elem_CleaningError"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="145" x="1665.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="1675.5" y="364.6836">DataCleaningError</text></g><!--MD5=[c828a0a1f5639a0de4ddfaa988012f42]
+entity PredictionError--><g id="elem_PredictionError"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="122" x="1508" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="102" x="1518" y="364.6836">PredictionError</text></g><!--MD5=[2e82c939477995ac114a51d33bb3192d]
+entity StorageError--><g id="elem_StorageError"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="107" x="2173.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="87" x="2183.5" y="364.6836">StorageError</text></g><!--MD5=[4bd021003a18fc952d64267906ae078b]
+entity PipelineError--><g id="elem_PipelineError"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="107" x="2031.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="87" x="2041.5" y="364.6836">PipelineError</text></g><!--MD5=[89d6d2d72f03be9660f19a589ad03f7f]
+entity PredictionService--><g id="elem_PredictionService"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="139" x="2424.5" y="341.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="119" x="2434.5" y="364.6836">PredictionService</text></g><!--MD5=[a12821cc8a951401b1697eb65a243d3e]
+entity InputPort--><g id="elem_InputPort"><ellipse cx="2399" cy="515.6885" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="63" x="2367.5" y="545.6836">InputPort</text></g><!--MD5=[4b2d58774c3b75983ba9c86812347d8e]
+entity ETLPort--><g id="elem_ETLPort"><ellipse cx="2628" cy="515.6885" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="53" x="2601.5" y="545.6836">ETLPort</text></g><!--MD5=[3dfc8b46052fd7e0ff66f5b4ccd96922]
+entity StoragePort--><g id="elem_StoragePort"><ellipse cx="2746" cy="515.6885" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="82" x="2705" y="545.6836">StoragePort</text></g><!--MD5=[9dbc490ce9e70651e65634be8c73ec58]
+entity ModelPort--><g id="elem_ModelPort"><ellipse cx="2516" cy="515.6885" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="70" x="2481" y="545.6836">ModelPort</text></g><!--MD5=[53da4ddb354cad6837c87306f907f301]
+entity PostgresAdapter--><g id="elem_PostgresAdapter"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="155" x="3777.5" y="707.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="3787.5" y="730.6836">PostgreSQLAdapter</text></g><g id="elem_GMN306"><path d="M3968,705.6885 L3968,721.6885 L3932.52,725.6885 L3968,729.6885 L3968,745.9541 A0,0 0 0 0 3968,745.9541 L4162,745.9541 A0,0 0 0 0 4162,745.9541 L4162,715.6885 L4152,705.6885 L3968,705.6885 A0,0 0 0 0 3968,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><path d="M4152,705.6885 L4152,715.6885 L4162,715.6885 L4152,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="157" x="3974" y="722.7554">Implements StoragePort</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="173" x="3974" y="737.8882">Provides PostgresResource</text></g><!--MD5=[90aa3cca43c0a613cdcff0a96bed0c10]
+entity SklearnAdapter--><g id="elem_SklearnAdapter"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="167" x="2898.5" y="707.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="2908.5" y="730.6836">SklearnModelAdapter</text></g><g id="elem_GMN311"><path d="M3100,705.6885 L3100,721.6885 L3065.69,725.6885 L3100,729.6885 L3100,745.9541 A0,0 0 0 0 3100,745.9541 L3276,745.9541 A0,0 0 0 0 3276,745.9541 L3276,715.6885 L3266,705.6885 L3100,705.6885 A0,0 0 0 0 3100,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><path d="M3266,705.6885 L3266,715.6885 L3276,715.6885 L3266,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="144" x="3106" y="722.7554">Implements ModelPort</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="155" x="3106" y="737.8882">Provides ModelResource</text></g><!--MD5=[2ec5b4f585e9d7ffdf322e0f7b0be108]
+entity DagsterAdapter--><g id="elem_DagsterAdapter"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="154" x="3332" y="707.6885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="3342" y="730.6836">DagsterETLAdapter</text></g><g id="elem_GMN316"><path d="M3521,705.6885 L3521,721.6885 L3486.02,725.6885 L3521,729.6885 L3521,745.9541 A0,0 0 0 0 3521,745.9541 L3721,745.9541 A0,0 0 0 0 3721,745.9541 L3721,715.6885 L3711,705.6885 L3521,705.6885 A0,0 0 0 0 3521,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><path d="M3711,705.6885 L3711,715.6885 L3721,715.6885 L3711,705.6885 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="128" x="3527" y="722.7554">Implements ETLPort</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="179" x="3527" y="737.8882">Uses DagsterGraphQLClient</text></g><!--MD5=[9327a901fccfc423d9eda9f5cf76114c]
+entity JobDef--><g id="elem_JobDef"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="110" x="3354" y="883.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="90" x="3364" y="906.1836">Job Definition</text></g><!--MD5=[1cbe0fa2c80014d1f7bde9580826fef3]
+entity RawInput--><g id="elem_RawInput"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="86" x="3366" y="1060.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="66" x="3376" y="1083.1836">raw_input</text></g><!--MD5=[38b59b6049eb5f2f4b6f69eaa94ca155]
+entity CleanedData--><g id="elem_CleanedData"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="112" x="3340" y="1157.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="92" x="3350" y="1180.1836">cleaned_data</text></g><!--MD5=[cdaa5de300207fff9bb293ceff43a573]
+entity StoredCleanedData--><g id="elem_StoredCleanedData"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="164" x="3135" y="1270.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="144" x="3145" y="1293.1836">stored_cleaned_data</text></g><!--MD5=[0ab8771035d6bc7b7812f84670e997bc]
+entity PreparedData--><g id="elem_PreparedData"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="120" x="3334" y="1270.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="3344" y="1293.1836">prepared_data</text></g><!--MD5=[7422e90aa1b7318cfaeab9b49396f487]
+entity PredictionResult--><g id="elem_PredictionResult"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="135" x="3253.5" y="1383.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="3263.5" y="1406.1836">prediction_result</text></g><!--MD5=[0d5f811165cae81e27239e44e4f0dd95]
+entity StoredPredictionResult--><g id="elem_StoredPredictionResult"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="187" x="3266.5" y="1496.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="167" x="3276.5" y="1519.1836">stored_prediction_result</text></g><!--MD5=[2b28c5e5a93917a18474a30edc554fbc]
+entity PostgresResource--><g id="elem_PostgresResource"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="167" x="3232.5" y="1641.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="3242.5" y="1664.1836">postgres_connection</text></g><!--MD5=[54b0ff7485bcb5794b16bcceaec87883]
+entity ModelResource--><g id="elem_ModelResource"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="86" x="3435" y="1641.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="66" x="3445" y="1664.1836">ml_model</text></g><!--MD5=[313e21acddddc3dae0b921f73aab74ec]
+entity ConfigResource--><g id="elem_ConfigResource"><rect fill="#FFFFFF" height="36.2969" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="62" x="3135" y="1641.1885"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="3145" y="1664.1836">config</text></g><!--MD5=[e04194d0181368d904c9ed352eacad2b]
+link API to Handler--><g id="link_API_Handler"><path d="M127.34,144.8585 C206.4,186.8385 409.08,294.4785 492.88,338.9785 " fill="none" id="API-to-Handler" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="497.74,341.5585,491.6655,333.806,493.3235,339.2144,487.9151,340.8724,497.74,341.5585" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[5dc4b8856440884d6692ace64715c76d]
+link Handler to InputPort--><g id="link_Handler_InputPort"><path d="M570.01,377.7585 C592.97,386.6785 622.59,396.7485 650,401.6885 C848.43,437.4685 1355.43,421.8785 1557,426.6885 C1645.22,428.7885 1866.19,425.9685 1954,434.6885 C2125.42,451.7185 2329.97,498.3385 2384.87,511.3085 " fill="none" id="Handler-to-InputPort" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2389.99,512.5185,2382.1581,506.5468,2385.1254,511.3629,2380.3092,514.3302,2389.99,512.5185" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[acf51d7984cd65eb7dd9d4bd08f656dd]
+link InputPort to PredictionService--><g id="link_InputPort_PredictionService"><path d="M2404.02,506.5485 C2418.28,483.4385 2459.34,416.8685 2480.71,382.2285 " fill="none" id="InputPort-to-PredictionService" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2483.47,377.7585,2475.3434,383.3224,2480.8471,382.0153,2482.1543,387.5191,2483.47,377.7585" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[54b41ad73992faa46b732f82a1136ab0]
+link PredictionService to ETLPort--><g id="link_PredictionService_ETLPort"><path d="M2516.32,377.7585 C2533.97,391.8885 2558.61,413.0785 2577,434.6885 C2595.38,456.2885 2612.11,485.0185 2621.09,501.5285 " fill="none" id="PredictionService-to-ETLPort" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2623.62,506.2285,2622.8712,496.4081,2621.2478,501.827,2615.8289,500.2037,2623.62,506.2285" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[2ef9da5dceb9f7cb7c32ff024ef09859]
+link PredictionService to StoragePort--><g id="link_PredictionService_StoragePort"><path d="M2559.16,377.7585 C2596.82,389.6985 2643.77,408.2785 2680,434.6885 C2705.8,453.4985 2727.53,484.6285 2738.44,501.9985 " fill="none" id="PredictionService-to-StoragePort" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2741.23,506.5085,2739.9052,496.7491,2738.6031,502.2541,2733.0982,500.9521,2741.23,506.5085" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[646a009b94a024880e054ba87010d7c0]
+link PredictionService to ModelPort--><g id="link_PredictionService_ModelPort"><path d="M2496.44,377.7585 C2500.86,408.7385 2510.13,473.5985 2514.11,501.4885 " fill="none" id="PredictionService-to-ModelPort" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2514.84,506.5485,2517.5117,497.0689,2514.1249,501.5999,2509.5939,498.2131,2514.84,506.5485" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[393ba38327e5bf5595819ec893301c4b]
+link StoragePort to PostgresAdapter--><g id="link_StoragePort_PostgresAdapter"><path d="M2755.1,518.3585 C2795,525.6285 2958.49,554.7185 3094,568.6885 C3287.51,588.6385 3336.68,584.3585 3531,593.6885 C3553.88,594.7885 3716.11,592.2985 3737,601.6885 C3784.91,623.2285 3823.11,674.0285 3842.03,703.1585 " fill="none" id="StoragePort-to-PostgresAdapter" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3844.9,707.6485,3843.4129,697.9125,3842.2027,703.4384,3836.6768,702.2282,3844.9,707.6485" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[5a6d00c8520c2037ad869ec380aa0dc5]
+link PostgresAdapter to PostgresDB--><g id="link_PostgresAdapter_PostgresDB"><path d="M3854.8,743.9585 C3854.45,774.3485 3853.72,837.5685 3853.31,873.5785 " fill="none" id="PostgresAdapter-to-PostgresDB" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3853.25,878.6885,3857.3526,869.7348,3853.3071,873.6888,3849.3531,869.6434,3853.25,878.6885" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[71cb619a66009406c463dd9c6a71a051]
+link PostgresAdapter to PostgresResource--><g id="link_PostgresAdapter_PostgresResource"><path d="M3832.05,743.9785 C3809.27,760.0685 3772.69,783.1185 3737,793.6885 C3722.7,797.9285 3614.36,792.0185 3603,801.6885 C3568.85,830.7685 3581,855.3285 3581,900.1885 C3581,900.1885 3581,900.1885 3581,1515.1885 C3581,1570.3085 3527.8,1562.3385 3476,1581.1885 C3451.55,1590.0885 3442.3,1579.8785 3418,1589.1885 C3388.67,1600.4285 3359.42,1621.4885 3339.81,1637.3985 " fill="none" id="PostgresAdapter-to-PostgresResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3335.53,1640.9085,3345.0212,1638.2785,3339.3909,1637.7314,3339.938,1632.1011,3335.53,1640.9085" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="54" x="3582" y="1236.2554">provides</text></g><!--MD5=[b37c27ac7993b52c1badcd66aed9ae33]
+link ModelPort to SklearnAdapter--><g id="link_ModelPort_SklearnAdapter"><path d="M2523.61,524.6985 C2534.54,535.8285 2555.71,556.0185 2577,568.6885 C2687.62,634.5185 2830.97,681.9585 2914.1,706.2385 " fill="none" id="ModelPort-to-SklearnAdapter" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2918.99,707.6685,2911.47,701.3085,2914.19,706.2685,2909.23,708.9885,2918.99,707.6685" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8ad6274e25a037161027444a5d0d14c8]
+link SklearnAdapter to ModelResource--><g id="link_SklearnAdapter_ModelResource"><path d="M3000.39,743.6885 C3019.42,760.0485 3050.84,783.7385 3083,793.6885 C3112.35,802.7685 3605.31,800.1185 3636,801.6885 C3699.27,804.9285 3867.57,791.1185 3920,826.6885 C3950.26,847.2185 3957,863.6185 3957,900.1885 C3957,900.1885 3957,900.1885 3957,1515.1885 C3957,1604.3385 3648.5,1642.4985 3526.66,1654.0885 " fill="none" id="SklearnAdapter-to-ModelResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3521.35,1654.5885,3530.6776,1657.75,3526.3291,1654.1319,3529.9472,1649.7834,3521.35,1654.5885" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="54" x="3958" y="1236.2554">provides</text></g><!--MD5=[f14819dd130d942fcfa6ee85a04a5512]
+link ETLPort to DagsterAdapter--><g id="link_ETLPort_DagsterAdapter"><path d="M2633.21,524.8285 C2641.46,536.9085 2658.8,559.1785 2680,568.6885 C2767.54,607.9585 3015.19,588.7885 3111,593.6885 C3131.1,594.7185 3273.68,593.3485 3292,601.6885 C3339.61,623.3685 3377.45,674.1185 3396.17,703.1985 " fill="none" id="ETLPort-to-DagsterAdapter" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3399.01,707.6785,3397.5699,697.9355,3396.333,703.4555,3390.8131,702.2186,3399.01,707.6785" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c94450102865658d63cb2ba6f3ba42d3]
+link DagsterAdapter to DagsterPipeline--><g id="link_DagsterAdapter_DagsterPipeline"><path d="M3431.52,743.7185 C3450.45,757.7485 3478.44,777.8485 3504,793.6885 C3533.05,811.6985 3615.13,855.2085 3663.69,880.6985 " fill="none" id="DagsterAdapter-to-DagsterPipeline" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3668.28,883.0985,3662.1561,875.385,3663.8486,880.7827,3658.4509,882.4752,3668.28,883.0985" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="81" x="3546" y="814.7554">submits jobs</text></g><!--MD5=[49e5b35387d9b10789a89321f356d55e]
+link DagsterAdapter to JobDef--><g id="link_DagsterAdapter_JobDef"><path d="M3409,743.9585 C3409,775.5285 3409,842.5185 3409,877.6385 " fill="none" id="DagsterAdapter-to-JobDef" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3409,882.9885,3413,873.9885,3409,877.9885,3405,873.9885,3409,882.9885" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="49" x="3410" y="814.7554">triggers</text></g><!--MD5=[927bedebf122520ceddad846f28b653b]
+link JobDef to RawInput--><g id="link_JobDef_RawInput"><path d="M3409,919.2885 C3409,951.0485 3409,1019.1185 3409,1054.6185 " fill="none" id="JobDef-to-RawInput" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3409,1060.0185,3413,1051.0185,3409,1055.0185,3405,1051.0185,3409,1060.0185" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[69a562a0d9c202b6e82e65573a545e99]
+link RawInput to CleanedData--><g id="link_RawInput_CleanedData"><path d="M3406.62,1096.6085 C3404.49,1112.1485 3401.37,1134.9685 3399.06,1151.8485 " fill="none" id="RawInput-to-CleanedData" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3398.37,1156.8785,3403.5655,1148.5115,3399.0551,1151.9256,3395.6409,1147.4153,3398.37,1156.8785" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[e9f4823e339c3173d7abffa17bbcb4b8]
+link CleanedData to StoredCleanedData--><g id="link_CleanedData_StoredCleanedData"><path d="M3368.42,1193.2885 C3336.23,1213.2485 3283.07,1246.2185 3249.07,1267.2985 " fill="none" id="CleanedData-to-StoredCleanedData" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3244.61,1270.0685,3254.3641,1268.7053,3248.854,1267.4249,3250.1343,1261.9149,3244.61,1270.0685" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[bf0bbe23353d98a88f70f6731c98c077]
+link CleanedData to PreparedData--><g id="link_CleanedData_PreparedData"><path d="M3395.69,1193.5285 C3395.34,1212.7585 3394.78,1243.8185 3394.4,1264.8485 " fill="none" id="CleanedData-to-PreparedData" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3394.31,1269.9685,3398.4637,1261.0384,3394.3957,1264.9692,3390.4649,1260.9012,3394.31,1269.9685" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[a553f4916929eed80bfe66774051b711]
+link PreparedData to PredictionResult--><g id="link_PreparedData_PredictionResult"><path d="M3382.59,1306.5285 C3369.79,1325.9985 3349,1357.6085 3335.17,1378.6485 " fill="none" id="PreparedData-to-PredictionResult" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3332.33,1382.9685,3340.6085,1377.6331,3335.0705,1378.7864,3333.9172,1373.2484,3332.33,1382.9685" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[ef8603c9a833c9d6f7d689ccc1a35ba2]
+link PredictionResult to StoredPredictionResult--><g id="link_PredictionResult_StoredPredictionResult"><path d="M3327.09,1419.5285 C3333.88,1438.8385 3344.85,1470.0785 3352.24,1491.1185 " fill="none" id="PredictionResult-to-StoredPredictionResult" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="3353.95,1495.9685,3354.739,1486.1513,3352.2919,1491.2514,3347.1917,1488.8043,3353.95,1495.9685" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[dc68c050805a9b2ce025e6dd87253795]
+link RawInput to PostgresResource--><g id="link_RawInput_PostgresResource"><path d="M3426.59,1096.4185 C3440.62,1111.2085 3459.57,1133.7985 3470,1157.1885 C3517.97,1264.7685 3521.85,1301.9885 3510,1419.1885 C3503.75,1481.0185 3510.88,1501.1585 3482,1556.1885 C3474.84,1569.8285 3471.51,1573.7785 3458,1581.1885 C3442.1,1589.9085 3434.73,1582.1985 3418,1589.1885 C3389.21,1601.2285 3360.09,1621.9685 3340.38,1637.5785 " fill="none" id="RawInput-to-PostgresResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3336.07,1641.0185,3345.5977,1638.5239,3339.9757,1637.8967,3340.6029,1632.2748,3336.07,1641.0185" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="3516" y="1349.2554">uses</text></g><!--MD5=[b3fc155fe126f8fc61ddd0617a2e17da]
+link CleanedData to PostgresResource--><g id="link_CleanedData_PostgresResource"><path d="M3416.02,1193.2285 C3434.59,1210.4485 3460.94,1238.9285 3472,1270.1885 C3477.34,1285.2685 3472.53,1290.1985 3472,1306.1885 C3471.56,1319.5485 3470.44,1322.8285 3470,1336.1885 C3469.75,1343.7385 3469.97,1345.6285 3470,1353.1885 C3470.22,1416.7485 3470.78,1432.6285 3471,1496.1885 C3471.09,1522.8585 3483.95,1532.8785 3471,1556.1885 C3457.53,1580.4485 3441.27,1574.0785 3418,1589.1885 C3393.22,1605.2785 3365.48,1624.0985 3345.19,1638.0185 " fill="none" id="CleanedData-to-PostgresResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3340.97,1640.9085,3350.6525,1639.1059,3345.0902,1638.0758,3346.1203,1632.5135,3340.97,1640.9085" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="3471" y="1405.7554">uses</text></g><!--MD5=[745b1b4ed90a516b440b24a34cf1ab0d]
+link StoredCleanedData to PostgresResource--><g id="link_StoredCleanedData_PostgresResource"><path d="M3210.07,1306.4585 C3193.53,1350.4985 3155.99,1469.6685 3196,1556.1885 C3212.89,1592.6985 3250,1620.9385 3278.51,1638.3485 " fill="none" id="StoredCleanedData-to-PostgresResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3283.01,1641.0485,3277.3505,1632.988,3278.7225,1638.476,3273.2346,1639.848,3283.01,1641.0485" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="3179" y="1462.2554">uses</text></g><!--MD5=[cf0b3d3cf5d724af2d01cd14fe6ec722]
+link PredictionResult to ModelResource--><g id="link_PredictionResult_ModelResource"><path d="M3294.71,1419.2385 C3251.66,1449.1485 3174.93,1512.0485 3217,1556.1885 C3229.82,1569.6385 3366.54,1557.8485 3384,1564.1885 C3420.15,1577.3085 3449.06,1613.1685 3464.85,1636.6185 " fill="none" id="PredictionResult-to-ModelResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3467.64,1640.8385,3465.9913,1631.1286,3464.8731,1636.6738,3459.3278,1635.5557,3467.64,1640.8385" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="3218" y="1518.7554">uses</text></g><!--MD5=[3259b1139077eecb75a664ee12e4cf40]
+link StoredPredictionResult to PostgresResource--><g id="link_StoredPredictionResult_PostgresResource"><path d="M3354.69,1532.4385 C3346.73,1558.3085 3331.69,1607.1785 3322.89,1635.7885 " fill="none" id="StoredPredictionResult-to-PostgresResource" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3321.33,1640.8785,3327.7983,1633.4515,3322.7994,1636.0993,3320.1516,1631.1004,3321.33,1640.8785" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="3345" y="1577.2554">uses</text></g><!--MD5=[e1f73f21a982bffd8e422b49e6a1a358]
+link PredictionService to HousingRecord--><g id="link_PredictionService_HousingRecord"><path d="M2458.64,377.7585 C2333.48,438.1785 1911.85,641.7285 1779.85,705.4485 " fill="none" id="PredictionService-to-HousingRecord" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1775.28,707.6585,1785.124,707.3497,1779.7831,705.4855,1781.6473,700.1447,1775.28,707.6585" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c3787fce00057f1ad68624e3a8df13e0]
+link PredictionService to Prediction--><g id="link_PredictionService_Prediction"><path d="M2424.79,377.7085 C2386.97,386.3185 2339.17,396.1185 2296,401.6885 C2163.56,418.7885 1824,396.6285 1696,434.6885 C1653.44,447.3385 1609.97,475.2785 1583.23,494.5385 " fill="none" id="PredictionService-to-Prediction" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1579.09,497.5585,1588.7204,495.4958,1583.1324,494.6159,1584.0124,489.0279,1579.09,497.5585" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8baa147b1a0cef16cde24f1de124e82f]
+link Prediction to HousingRecord--><g id="link_Prediction_HousingRecord"><path d="M1581.41,533.8085 C1603.24,549.8385 1635.35,575.2185 1659,601.6885 C1687.87,633.9985 1714.01,677.4285 1728.38,703.0985 " fill="none" id="Prediction-to-HousingRecord" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1730.93,707.6785,1730.0558,697.8685,1728.5018,703.3077,1723.0626,701.7536,1730.93,707.6785" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="54" x="1651" y="589.7554">contains</text></g><!--MD5=[fe260e2dde312601b31b5827b1e63ed4]
+link Prediction to PredictionStatus--><g id="link_Prediction_PredictionStatus"><path d="M1558.47,533.7085 C1561.71,571.1185 1569.44,660.4685 1573.07,702.3285 " fill="none" id="Prediction-to-PredictionStatus" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1573.51,707.4285,1576.7245,698.119,1573.0818,702.4468,1568.7539,698.8041,1573.51,707.4285" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="23" x="1565" y="589.7554">has</text></g><!--MD5=[343fc332d84664e9a9964ea9341a7c4b]
+link HousingRecord to OceanProximity--><g id="link_HousingRecord_OceanProximity"><path d="M1740,743.9585 C1740,775.5285 1740,842.5185 1740,877.6385 " fill="none" id="HousingRecord-to-OceanProximity" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1740,882.9885,1744,873.9885,1740,877.9885,1736,873.9885,1740,882.9885" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1741" y="814.7554">uses</text></g><!--MD5=[47222b7e1956c7bbbd773d6a76124090]
+link APIRequest to HousingRecord--><g id="link_APIRequest_HousingRecord"><path d="M272.94,144.8585 C276.61,193.7085 294.23,334.3185 377,401.6885 C788.4,736.5585 1028.3,530.6185 1555,593.6885 C1578.01,596.4485 1639.03,589.9185 1659,601.6885 C1697.73,624.5185 1721.47,674.0085 1732.54,702.7685 " fill="none" id="APIRequest-to-HousingRecord" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1734.33,707.5485,1734.9053,697.7164,1732.5697,702.8686,1727.4175,700.533,1734.33,707.5485" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="53" x="407" y="422.7554">maps to</text></g><!--MD5=[3a7afd6011e45e7bd2aaad945c03f7e7]
+link SubmissionResponse to Prediction--><g id="link_SubmissionResponse_Prediction"><path d="M556.24,144.6985 C581.41,152.2985 611.64,161.2085 639,168.6885 C653.14,172.5585 660.45,166.5085 671,176.6885 C745.92,248.9485 657.28,333.5885 736,401.6885 C852.39,502.3785 1347.57,513.6885 1507.19,514.6985 " fill="none" id="SubmissionResponse-to-Prediction" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1512.27,514.7185,1503.293,510.6671,1507.2701,514.6899,1503.2473,518.667,1512.27,514.7185" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="53" x="737" y="364.2554">maps to</text></g><!--MD5=[0aded4868096da033c69b536ee902e28]
+link PendingResponse to Prediction--><g id="link_PendingResponse_Prediction"><path d="M774.12,144.9485 C801.02,194.0485 885.31,335.2385 998,401.6885 C1165.33,500.3485 1404.49,514.1585 1507.12,515.2185 " fill="none" id="PendingResponse-to-Prediction" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1512.2,515.2685,1503.2346,511.1915,1507.2002,515.2256,1503.166,519.1912,1512.2,515.2685" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="53" x="999" y="364.2554">maps to</text></g><!--MD5=[192c8916396448cf6e66c150cecc5544]
+link CompletedResponse to Prediction--><g id="link_CompletedResponse_Prediction"><path d="M1036.1,144.8485 C1062.2,192.4885 1142.07,327.7285 1245,401.6885 C1326.73,460.4185 1442.21,491.6185 1507.31,505.5085 " fill="none" id="CompletedResponse-to-Prediction" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1512.3,506.5585,1504.3333,500.7679,1507.4102,505.5147,1502.6633,508.5916,1512.3,506.5585" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="53" x="1246" y="364.2554">maps to</text></g><!--MD5=[996947fd0bcfbae6dd826ebaf33299b5]
+link FailedResponse to Prediction--><g id="link_FailedResponse_Prediction"><path d="M1287.62,144.8185 C1308.02,189.6285 1367.05,313.0185 1437,401.6885 C1465.43,437.7285 1505.35,472.9785 1531.2,494.2685 " fill="none" id="FailedResponse-to-Prediction" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1535.22,497.5585,1530.7926,488.7608,1531.3521,494.39,1525.723,494.9494,1535.22,497.5585" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="53" x="1438" y="364.2554">maps to</text></g><!--MD5=[343e5647c73e25ca1514a1eda762b0f3]
+link ValidationError to HousingRecord--><g id="link_ValidationError_HousingRecord"><path d="M1912.51,377.7585 C1882.82,437.4685 1783.64,636.9185 1750.72,703.1285 " fill="none" id="ValidationError-to-HousingRecord" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1748.47,707.6585,1756.0646,701.3878,1750.7003,703.1835,1748.9046,697.8192,1748.47,707.6585" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="1883" y="520.2554">validates</text></g><!--MD5=[9e46a0c49d7c194bf801cee1dacd9f96]
+link CleaningError to HousingRecord--><g id="link_CleaningError_HousingRecord"><path d="M1738.09,377.7585 C1738.42,437.2285 1739.51,635.3285 1739.88,702.3285 " fill="none" id="CleaningError-to-HousingRecord" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1739.91,707.6585,1743.8585,698.6358,1739.8814,702.6586,1735.8586,698.6815,1739.91,707.6585" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="41" x="1741" y="520.2554">cleans</text></g><!--MD5=[96949204bf7fabe7589a44a22bdc2dbb]
+link PredictionError to Prediction--><g id="link_PredictionError_Prediction"><path d="M1567.67,377.7585 C1565.49,405.7385 1561.16,461.3585 1558.74,492.4085 " fill="none" id="PredictionError-to-Prediction" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1558.34,497.5385,1563.0469,488.8872,1558.7399,492.5545,1555.0726,488.2474,1558.34,497.5385" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="50" x="1567" y="422.7554">handles</text></g><!--MD5=[2e75ebd1a03901d5b178bd41384c19cc]
+link StorageError to PostgresAdapter--><g id="link_StorageError_PostgresAdapter"><path d="M2280.78,375.6285 C2316.54,384.8785 2364.71,396.0285 2408,401.6885 C2604.25,427.3285 3104.04,395.3185 3298,434.6885 C3502.58,476.2185 3562.94,486.4485 3737,601.6885 C3779.86,630.0685 3818.89,676.5685 3839.55,703.5285 " fill="none" id="StorageError-to-PostgresAdapter" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3842.7,707.6785,3840.4398,698.0925,3839.6749,703.6974,3834.07,702.9326,3842.7,707.6785" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="50" x="3683" y="520.2554">handles</text></g><!--MD5=[153fa19aaf365afea1e444bb3f2520f1]
+link PipelineError to DagsterAdapter--><g id="link_PipelineError_DagsterAdapter"><path d="M2108.02,377.7385 C2121.33,386.5985 2138.8,396.6085 2156,401.6885 C2295.78,442.9485 2667.94,406.8385 2811,434.6885 C3033.13,477.9285 3101.76,479.1385 3292,601.6885 C3335.04,629.4085 3373.54,676.1485 3393.84,703.3285 " fill="none" id="PipelineError-to-DagsterAdapter" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="3396.94,707.5085,3394.7947,697.8961,3393.9628,703.4914,3388.3675,702.6596,3396.94,707.5085" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="50" x="3239" y="520.2554">handles</text></g><!--MD5=[92eed804678b9fde3210265b55a30087]
+@startuml
+!theme plain
+skinparam componentStyle rectangle
+skinparam component {
+  BackgroundColor White
+  BorderColor Black
+}
+
+package "External Systems" {
+  database "PostgreSQL" as PostgresDB
+  [Dagster Pipeline] as DagsterPipeline
+}
+
+package "Driving Adapters" {
+  [FastAPI REST API] as API
+  [FastAPI Handler] as Handler
+  package "API Models" {
+    [PredictionRequest] as APIRequest
+    [PredictionSubmissionResponse] as SubmissionResponse
+    [PredictionPendingResponse] as PendingResponse
+    [PredictionCompletedResponse] as CompletedResponse
+    [PredictionFailedResponse] as FailedResponse
+  }
+}
+
+package "Core Application" {
+  package "Domain" {
+    package "Entities" {
+      [HousingRecord] as HousingRecord
+      [Prediction] as Prediction
+      [PredictionStatus] as PredictionStatus
+    }
+    package "Value Objects" {
+      [OceanProximity] as OceanProximity
+    }
+    package "Exceptions" {
+      [DataValidationError] as ValidationError
+      [DataCleaningError] as CleaningError
+      [PredictionError] as PredictionError
+      [StorageError] as StorageError
+      [PipelineError] as PipelineError
+    }
+  }
+
+  package "Application Services" {
+    [PredictionService] as PredictionService
+  }
+
+  package "Ports" {
+    interface "InputPort" as InputPort
+    interface "ETLPort" as ETLPort
+    interface "StoragePort" as StoragePort
+    interface "ModelPort" as ModelPort
+  }
+}
+
+package "Driven Adapters" {
+  package "Storage Adapters" {
+    [PostgreSQLAdapter] as PostgresAdapter
+    note right of PostgresAdapter
+      Implements StoragePort
+      Provides PostgresResource
+    end note
+  }
+
+  package "ML Adapters" {
+    [SklearnModelAdapter] as SklearnAdapter
+    note right of SklearnAdapter
+      Implements ModelPort
+      Provides ModelResource
+    end note
+  }
+
+  package "ETL Adapters" {
+    [DagsterETLAdapter] as DagsterAdapter
+    note right of DagsterAdapter
+      Implements ETLPort
+      Uses DagsterGraphQLClient
+    end note
+  }
+}
+
+package "Dagster Pipeline" {
+  [Job Definition] as JobDef
+  package "Assets" {
+    [raw_input] as RawInput
+    [cleaned_data] as CleanedData
+    [stored_cleaned_data] as StoredCleanedData
+    [prepared_data] as PreparedData
+    [prediction_result] as PredictionResult
+    [stored_prediction_result] as StoredPredictionResult
+  }
+  package "Resources" {
+    [postgres_connection] as PostgresResource
+    [ml_model] as ModelResource
+    [config] as ConfigResource
+  }
+}
+
+' Flow connections
+API - -> Handler
+Handler - -> InputPort
+InputPort - -> PredictionService
+PredictionService - -> ETLPort
+PredictionService - -> StoragePort
+PredictionService - -> ModelPort
+
+' Adapter implementations
+StoragePort - -> PostgresAdapter
+PostgresAdapter - -> PostgresDB
+PostgresAdapter ..> PostgresResource : provides
+
+ModelPort - -> SklearnAdapter
+SklearnAdapter ..> ModelResource : provides
+
+ETLPort - -> DagsterAdapter
+DagsterAdapter - -> DagsterPipeline : submits jobs
+DagsterAdapter - -> JobDef : triggers
+
+' Asset flow
+JobDef - -> RawInput
+RawInput - -> CleanedData
+CleanedData - -> StoredCleanedData
+CleanedData - -> PreparedData
+PreparedData - -> PredictionResult
+PredictionResult - -> StoredPredictionResult
+
+' Resource usage
+RawInput ..> PostgresResource : uses
+CleanedData ..> PostgresResource : uses
+StoredCleanedData ..> PostgresResource : uses
+PredictionResult ..> ModelResource : uses
+StoredPredictionResult ..> PostgresResource : uses
+
+' Domain relationships
+PredictionService - -> HousingRecord
+PredictionService - -> Prediction
+Prediction - -> HousingRecord : contains
+Prediction - -> PredictionStatus : has
+HousingRecord - -> OceanProximity : uses
+
+' API to Domain mappings
+APIRequest ..> HousingRecord : maps to
+SubmissionResponse ..> Prediction : maps to
+PendingResponse ..> Prediction : maps to
+CompletedResponse ..> Prediction : maps to
+FailedResponse ..> Prediction : maps to
+
+' Error handling
+ValidationError ..> HousingRecord : validates
+CleaningError ..> HousingRecord : cleans
+PredictionError ..> Prediction : handles
+StorageError ..> PostgresAdapter : handles
+PipelineError ..> DagsterAdapter : handles
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam componentStyle rectangle
+skinparam component {
+  BackgroundColor White
+  BorderColor Black
+}
+
+package "External Systems" {
+  database "PostgreSQL" as PostgresDB
+  [Dagster Pipeline] as DagsterPipeline
+}
+
+package "Driving Adapters" {
+  [FastAPI REST API] as API
+  [FastAPI Handler] as Handler
+  package "API Models" {
+    [PredictionRequest] as APIRequest
+    [PredictionSubmissionResponse] as SubmissionResponse
+    [PredictionPendingResponse] as PendingResponse
+    [PredictionCompletedResponse] as CompletedResponse
+    [PredictionFailedResponse] as FailedResponse
+  }
+}
+
+package "Core Application" {
+  package "Domain" {
+    package "Entities" {
+      [HousingRecord] as HousingRecord
+      [Prediction] as Prediction
+      [PredictionStatus] as PredictionStatus
+    }
+    package "Value Objects" {
+      [OceanProximity] as OceanProximity
+    }
+    package "Exceptions" {
+      [DataValidationError] as ValidationError
+      [DataCleaningError] as CleaningError
+      [PredictionError] as PredictionError
+      [StorageError] as StorageError
+      [PipelineError] as PipelineError
+    }
+  }
+
+  package "Application Services" {
+    [PredictionService] as PredictionService
+  }
+
+  package "Ports" {
+    interface "InputPort" as InputPort
+    interface "ETLPort" as ETLPort
+    interface "StoragePort" as StoragePort
+    interface "ModelPort" as ModelPort
+  }
+}
+
+package "Driven Adapters" {
+  package "Storage Adapters" {
+    [PostgreSQLAdapter] as PostgresAdapter
+    note right of PostgresAdapter
+      Implements StoragePort
+      Provides PostgresResource
+    end note
+  }
+
+  package "ML Adapters" {
+    [SklearnModelAdapter] as SklearnAdapter
+    note right of SklearnAdapter
+      Implements ModelPort
+      Provides ModelResource
+    end note
+  }
+
+  package "ETL Adapters" {
+    [DagsterETLAdapter] as DagsterAdapter
+    note right of DagsterAdapter
+      Implements ETLPort
+      Uses DagsterGraphQLClient
+    end note
+  }
+}
+
+package "Dagster Pipeline" {
+  [Job Definition] as JobDef
+  package "Assets" {
+    [raw_input] as RawInput
+    [cleaned_data] as CleanedData
+    [stored_cleaned_data] as StoredCleanedData
+    [prepared_data] as PreparedData
+    [prediction_result] as PredictionResult
+    [stored_prediction_result] as StoredPredictionResult
+  }
+  package "Resources" {
+    [postgres_connection] as PostgresResource
+    [ml_model] as ModelResource
+    [config] as ConfigResource
+  }
+}
+
+API - -> Handler
+Handler - -> InputPort
+InputPort - -> PredictionService
+PredictionService - -> ETLPort
+PredictionService - -> StoragePort
+PredictionService - -> ModelPort
+
+StoragePort - -> PostgresAdapter
+PostgresAdapter - -> PostgresDB
+PostgresAdapter ..> PostgresResource : provides
+
+ModelPort - -> SklearnAdapter
+SklearnAdapter ..> ModelResource : provides
+
+ETLPort - -> DagsterAdapter
+DagsterAdapter - -> DagsterPipeline : submits jobs
+DagsterAdapter - -> JobDef : triggers
+
+JobDef - -> RawInput
+RawInput - -> CleanedData
+CleanedData - -> StoredCleanedData
+CleanedData - -> PreparedData
+PreparedData - -> PredictionResult
+PredictionResult - -> StoredPredictionResult
+
+RawInput ..> PostgresResource : uses
+CleanedData ..> PostgresResource : uses
+StoredCleanedData ..> PostgresResource : uses
+PredictionResult ..> ModelResource : uses
+StoredPredictionResult ..> PostgresResource : uses
+
+PredictionService - -> HousingRecord
+PredictionService - -> Prediction
+Prediction - -> HousingRecord : contains
+Prediction - -> PredictionStatus : has
+HousingRecord - -> OceanProximity : uses
+
+APIRequest ..> HousingRecord : maps to
+SubmissionResponse ..> Prediction : maps to
+PendingResponse ..> Prediction : maps to
+CompletedResponse ..> Prediction : maps to
+FailedResponse ..> Prediction : maps to
+
+ValidationError ..> HousingRecord : validates
+CleaningError ..> HousingRecord : cleans
+PredictionError ..> Prediction : handles
+StorageError ..> PostgresAdapter : handles
+PipelineError ..> DagsterAdapter : handles
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
