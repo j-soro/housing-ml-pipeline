@@ -6,7 +6,7 @@ from enum import Enum
 from typing import Optional
 from uuid import uuid4
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from src.core.domain.entities.housing_record import HousingRecord
 
@@ -36,3 +36,19 @@ class Prediction(BaseModel):
     )
     error: Optional[str] = Field(None, description="Error message if prediction failed")
     run_id: Optional[str] = Field(None, description="Dagster run ID that generated this prediction")
+
+    @field_validator("value")
+    @classmethod
+    def validate_value(cls, v):
+        """Validate prediction value is positive."""
+        if v < 0:
+            raise ValueError("Prediction value must be positive")
+        return v
+
+    @field_validator("record_id")
+    @classmethod
+    def validate_record_id(cls, v):
+        """Validate record_id is not empty."""
+        if not v:
+            raise ValueError("Record ID cannot be empty")
+        return v
