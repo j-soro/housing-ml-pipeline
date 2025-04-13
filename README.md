@@ -25,17 +25,40 @@ This project implements a machine learning pipeline for predicting housing price
 
 This architecture demonstrates clean code principles, dependency injection, and separation of concerns while providing a practical solution for ML prediction workflows.
 
-## Architecture
+## System Architecture
 
-The project follows hexagonal (ports and adapters) architecture:
+This project follows hexagonal (ports and adapters) architecture to create a maintainable, testable, and scalable system. The architecture ensures clear separation of concerns, making the system easier to understand, test, and extend.
 
-### Core Domain
+### Component Diagram
+![](https://github.com/j-soro/housing-ml-pipeline/raw/refs/heads/main/component-diagram.svg)
+
+The component diagram illustrates the hexagonal architecture of the system, showing:
+- Core domain entities and services at the center
+- Ports defining the system boundaries
+- Adapters implementing the ports
+- External systems and their relationships
+
+### Sequence Diagram
+![](https://github.com/j-soro/housing-ml-pipeline/raw/refs/heads/main/sequence-diagram.svg)
+
+The sequence diagram illustrates the asynchronous flow of a prediction request through the system using two different endpoints:
+1. **Submit Request** (`POST /predictions`): Client submits housing property data to the API
+2. **Process Asynchronously**: API handler processes the request and triggers the Dagster pipeline, immediately returning a run ID to the client
+3. **Pipeline Execution**: The pipeline performs data cleaning, transformation, and prediction in the background
+4. **Check Status** (`GET /predictions/{run-id}`): Client can poll this endpoint at any time using the run ID to check the current status
+5. **Return Results**: Once complete, the client receives the prediction results in the response
+
+This asynchronous pattern allows the system to handle long-running predictions without blocking the client, which can continue with other tasks while waiting for results.
+
+### Architecture Components
+
+#### Core Domain
 - **Entities**: `HousingRecord`, `Prediction`, `PredictionStatus`
 - **Value Objects**: `OceanProximity`
 - **Domain Services**: `PredictionService`
 - **Ports**: `InputPort`, `ETLPort`, `StoragePort`, `ModelPort`
 
-### Adapters
+#### Adapters
 - **Driving Adapters**:
   - FastAPI REST API
   - FastAPI Handler
@@ -45,14 +68,10 @@ The project follows hexagonal (ports and adapters) architecture:
   - Sklearn Model Adapter
   - Dagster ETL Adapter
 
-### External Systems
+#### External Systems
 - PostgreSQL Database
 - Dagster Pipeline
 - ML Model (scikit-learn)
-
-### Architecture Diagrams
-- [Component Diagram](plantuml.svg) - Shows the hexagonal architecture components and their relationships
-- [Sequence Diagram](sequence.svg) - Illustrates the prediction request and result flows
 
 ## Prerequisites
 
@@ -114,6 +133,8 @@ The API documentation is available in several formats:
 
 ## API Endpoints
 
+The API follows an asynchronous pattern where clients submit prediction requests and then check their status separately.
+
 ### Submit Prediction Request
 ```bash
 POST /predictions
@@ -132,10 +153,31 @@ Content-Type: application/json
 }
 ```
 
+**Response**: Returns a run ID that can be used to check the status of the prediction.
+```json
+{
+    "run_id": "123e4567-e89b-12d3-a456-426614174000"
+}
+```
+
 ### Get Prediction Result
 ```bash
 GET /predictions/{run_id}
 ```
+
+**Response**: Returns the current status of the prediction. If the prediction is complete, it also includes the prediction result.
+```json
+{
+    "status": "completed",
+    "prediction": 320201.58554044
+}
+```
+
+**Possible Status Values**:
+- `pending`: The prediction request has been received but processing hasn't started
+- `running`: The prediction is currently being processed
+- `completed`: The prediction has been completed successfully
+- `failed`: The prediction failed (includes error details)
 
 ## Project Structure
 
@@ -157,6 +199,93 @@ GET /predictions/{run_id}
 ├── Dockerfile           # Application container definition
 ├── pyproject.toml       # Python dependencies
 └──
+```
+
+## Database Schema
+
+The system uses PostgreSQL to store both the cleaned input data and prediction results. Below is the database schema:
+
+### Entity Relationship Diagram
+
+```mermaid
+erDiagram
+    housing_records ||--|| predictions : "has"
+
+    housing_records {
+        UUID id PK
+        FLOAT longitude
+        FLOAT latitude
+        FLOAT housing_median_age
+        FLOAT total_rooms
+        FLOAT total_bedrooms
+        FLOAT population
+        FLOAT households
+        FLOAT median_income
+        VARCHAR ocean_proximity
+        TIMESTAMP created_at
+    }
+
+    predictions {
+        UUID id PK
+        UUID housing_record_id FK
+        FLOAT predicted_value
+        VARCHAR status
+        TEXT error_message
+        TIMESTAMP created_at
+        TIMESTAMP updated_at
+    }
+```
+
+### Tables
+
+#### `housing_records`
+Stores the cleaned housing data submitted for prediction.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key, auto-generated |
+| longitude | FLOAT | Longitude of the property |
+| latitude | FLOAT | Latitude of the property |
+| housing_median_age | FLOAT | Median age of houses in the block |
+| total_rooms | FLOAT | Total number of rooms in the block |
+| total_bedrooms | FLOAT | Total number of bedrooms in the block |
+| population | FLOAT | Total population in the block |
+| households | FLOAT | Total number of households in the block |
+| median_income | FLOAT | Median income of households in the block |
+| ocean_proximity | VARCHAR | Proximity to the ocean (e.g., 'NEAR BAY', 'INLAND') |
+| created_at | TIMESTAMP | When the record was created |
+
+#### `predictions`
+Stores the prediction results for each housing record.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key, auto-generated |
+| housing_record_id | UUID | Foreign key to housing_records |
+| predicted_value | FLOAT | The predicted house value |
+| status | VARCHAR | Status of the prediction ('pending', 'running', 'completed', 'failed') |
+| error_message | TEXT | Error message if prediction failed (nullable) |
+| created_at | TIMESTAMP | When the prediction was created |
+| updated_at | TIMESTAMP | When the prediction was last updated |
+
+### Relationships
+
+- Each `prediction` record is associated with exactly one `housing_record` through the `housing_record_id` foreign key.
+- A `housing_record` has exactly one `prediction` record.
+
+### Indexes
+
+The following indexes are recommended for optimal performance:
+
+- Primary key indexes on `id` columns (automatically created by PostgreSQL)
+- Foreign key index on `housing_record_id` in the `predictions` table (automatically created by PostgreSQL)
+- Index on `status` in the `predictions` table for efficient status queries
+
+To implement these indexes, you would add the following SQL:
+
+```sql
+-- Index on status for efficient status queries
+CREATE INDEX idx_predictions_status ON predictions(status);
 ```
 
 ## Development
