@@ -2,6 +2,57 @@
 
 A machine learning pipeline for housing price predictions using hexagonal architecture, FastAPI, Dagster, and PostgreSQL. This project demonstrates clean architecture principles and modern development practices for building maintainable, testable, and scalable ML systems.
 
+## Quick Start
+
+### Local Deployment
+```bash
+# Clone the repository
+git clone <repository-url>
+cd housing-ml-pipeline
+
+# Create models directory and add a model file
+mkdir -p models
+# You should have a 'model.joblib' in the ./models directory
+
+# For production deployment
+docker-compose up -d
+
+# For development (with hot-reloading)
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+
+# Verify services are running
+docker-compose ps
+```
+
+### API Usage
+```python
+import requests
+
+# 1. Send your house data
+response = requests.post("http://localhost:8000/predictions", json={
+    "longitude": -122.23,
+    "latitude": 37.88,
+    "housing_median_age": 41.0,
+    "total_rooms": 880.0,
+    "total_bedrooms": 129.0,
+    "population": 322.0,
+    "households": 126.0,
+    "median_income": 8.3252,
+    "ocean_proximity": "NEAR BAY"
+})
+
+# 2. Get your prediction ID
+run_id = response.json()["run_id"]
+
+# 3. Check your prediction (when ready)
+result = requests.get(f"http://localhost:8000/predictions/{run_id}")
+prediction = result.json()["prediction"]
+print(f"Predicted house price: ${prediction:,.2f}")
+```
+
+The API follows an asynchronous pattern where you submit data (POST) and receive a run ID, then check the status separately using that run ID as a path parameter (GET).
+This allows for non-blocking operation during the ML pipeline execution.
+
 ## Overview
 
 This project implements a machine learning pipeline for predicting housing prices based on property characteristics. It follows hexagonal architecture principles to create a maintainable, testable, and scalable system.
