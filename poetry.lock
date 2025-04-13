@@ -1287,6 +1287,17 @@ files = [
 ]
 
 [[package]]
+name = "mockito"
+version = "1.5.4"
+description = "Spying framework"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mockito-1.5.4-py3-none-any.whl", hash = "sha256:ba7fbea6ede6ebc180f376bc5d97a4b95c7ccf54a57f12d2af740c440d35d553"},
+    {file = "mockito-1.5.4.tar.gz", hash = "sha256:f00ed587c32966df3293c294cadb31769460adfc4154f52b90672946aa4b32df"},
+]
+
+[[package]]
 name = "multidict"
 version = "6.4.3"
 description = "multidict implementation"
@@ -2059,6 +2070,20 @@ pytest = ">=4.6"
 
 [package.extras]
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
+
+[[package]]
+name = "pytest-mockito"
+version = "0.0.4"
+description = "Base fixtures for mockito"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytest-mockito-0.0.4.tar.gz", hash = "sha256:40d40cdf118127dcb1e3c9e838b0d1c11d5197a23beaf10b6e3f42f9b6cb68a9"},
+]
+
+[package.dependencies]
+mockito = ">=1.0.6"
+pytest = ">=3"
 
 [[package]]
 name = "python-dateutil"
@@ -3146,4 +3171,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9.13,<3.10"
-content-hash = "71e80d82906c88af08ee4af27fbc731c1e451ccf2be286b17561a1208335d833"
+content-hash = "5608599e1a2db57822304a5460a983d7e38788cfdf0b532fcaf8d5c05e45140f"
