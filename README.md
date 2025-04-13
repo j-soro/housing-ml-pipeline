@@ -2,12 +2,21 @@
 
 A machine learning pipeline for housing price predictions using hexagonal architecture, FastAPI, Dagster, and PostgreSQL. This project demonstrates clean architecture principles and modern development practices for building maintainable, testable, and scalable ML systems.
 
+## Overview
+
+This project implements a machine learning pipeline for predicting housing prices based on property characteristics. Key features include:
+- Asynchronous processing with Dagster ETL pipeline
+- Clean architecture with hexagonal design
+- RESTful API with FastAPI
+- Comprehensive monitoring and testing
+- Dockerized deployment
+
 ## Quick Start
 
 ### Local Deployment
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/j-soro/housing-ml-pipeline.git
 cd housing-ml-pipeline
 
 # Create models directory and add a model file
@@ -50,58 +59,17 @@ prediction = result.json()["prediction"]
 print(f"Predicted house price: ${prediction:,.2f}")
 ```
 
-The API follows an asynchronous pattern where you submit data (POST) and receive a run ID, then check the status separately using that run ID as a path parameter (GET).
-This allows for non-blocking operation during the ML pipeline execution.
+## Architecture
 
-## Overview
-
-This project implements a machine learning pipeline for predicting housing prices based on property characteristics. It follows hexagonal architecture principles to create a maintainable, testable, and scalable system.
-
-### Key Features
-- **Asynchronous Processing**: Submit prediction requests and retrieve results asynchronously
-- **Clean Architecture**: Clear separation of concerns with ports and adapters
-- **ETL Pipeline**: Automated data cleaning, transformation, and prediction workflow
-- **RESTful API**: Simple HTTP interface for submitting and retrieving predictions
-- **Dockerized**: Easy deployment with containerized services
-
-### How It Works
-1. **Submit Data**: Send housing property data to `POST /predictions` endpoint
-2. **Process Asynchronously**: The system triggers a Dagster ETL pipeline and returns a run ID
-3. **Pipeline Execution**: The pipeline performs:
-   - Data cleaning and transformation
-   - Clean data persistence to PostgreSQL
-   - ML model prediction on the data
-   - Result storage in PostgreSQL
-4. **Check Status**: Use `GET /predictions/{run-id}` to check the current status of any pipeline run
-
-This architecture demonstrates clean code principles, dependency injection, and separation of concerns while providing a practical solution for ML prediction workflows.
-
-## System Architecture
-
-This project follows hexagonal (ports and adapters) architecture to create a maintainable, testable, and scalable system. The architecture ensures clear separation of concerns, making the system easier to understand, test, and extend.
+This project follows hexagonal (ports and adapters) architecture to create a maintainable, testable, and scalable system.
 
 ### Component Diagram
 ![](https://github.com/j-soro/housing-ml-pipeline/raw/refs/heads/main/component-diagram.svg)
 
-The component diagram illustrates the hexagonal architecture of the system, showing:
-- Core domain entities and services at the center
-- Ports defining the system boundaries
-- Adapters implementing the ports
-- External systems and their relationships
-
 ### Sequence Diagram
 ![](https://github.com/j-soro/housing-ml-pipeline/raw/refs/heads/main/sequence-diagram.svg)
 
-The sequence diagram illustrates the asynchronous flow of a prediction request through the system using two different endpoints:
-1. **Submit Request** (`POST /predictions`): Client submits housing property data to the API
-2. **Process Asynchronously**: API handler processes the request and triggers the Dagster pipeline, immediately returning a run ID to the client
-3. **Pipeline Execution**: The pipeline performs data cleaning, transformation, and prediction in the background
-4. **Check Status** (`GET /predictions/{run-id}`): Client can poll this endpoint at any time using the run ID to check the current status
-5. **Return Results**: Once complete, the client receives the prediction results in the response
-
-This asynchronous pattern allows the system to handle long-running predictions without blocking the client, which can continue with other tasks while waiting for results.
-
-### Architecture Components
+### Key Components
 
 #### Core Domain
 - **Entities**: `HousingRecord`, `Prediction`, `PredictionStatus`
@@ -110,83 +78,73 @@ This asynchronous pattern allows the system to handle long-running predictions w
 - **Ports**: `InputPort`, `ETLPort`, `StoragePort`, `ModelPort`
 
 #### Adapters
-- **Driving Adapters**:
-  - FastAPI REST API
-  - FastAPI Handler
-  - API Models (Request/Response DTOs)
-- **Driven Adapters**:
-  - PostgreSQL Adapter
-  - Sklearn Model Adapter
-  - Dagster ETL Adapter
+- **Driving Adapters**: FastAPI REST API, Handler, API Models
+- **Driven Adapters**: PostgreSQL, Sklearn Model, Dagster ETL
 
-#### External Systems
-- PostgreSQL Database
-- Dagster Pipeline
-- ML Model (scikit-learn)
+## Development
 
-## Prerequisites
-
+### Prerequisites
 - Docker
 - Docker Compose
 - Python 3.9+ (for local development)
 - Poetry (for local development)
 
-## Setup
-
-### 1. Initial Setup
+### Setup
 ```bash
-# Clone the repository
-git clone <repository-url>
+# Clone and setup
+git clone https://github.com/j-soro/housing-ml-pipeline.git
 cd housing-ml-pipeline
-
-# Create and activate a Python 3.9 virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install Poetry
 pip install poetry
-
-# Install dependencies
 poetry install
-```
 
-### 2. Configuration
-```bash
-# Copy environment template
+# Configuration
 cp .env.example .env
-
-# Create models directory
 mkdir -p models
+# Add your model.joblib to the models directory
 ```
 
-### 3. Model Setup
+### Testing
+The project includes comprehensive test coverage:
+
 ```bash
-# Copy your trained model
-cp /path/to/your/model.joblib models/model.joblib
+# Run all tests
+pytest
+
+# Run specific test categories
+pytest tests/unit/     # Unit tests
+pytest tests/integration/  # Integration tests
 ```
 
-### 4. Start Services
-```bash
-# Start all services
-docker-compose up -d
+#### Test Structure
+- **Unit Tests**: Test individual components in isolation
+- **Integration Tests**: Test component interactions
+- **Test Assets**: Mock data and fixtures for testing
+- **Test Base**: Common test utilities and configurations
 
-# Check logs
-docker-compose logs -f
-```
+### Monitoring
+The system includes comprehensive monitoring setup:
+
+- **Dagster UI**: Pipeline monitoring and debugging
+- **Prometheus**: Metrics collection
+- **Grafana**: Visualization and dashboards
+
+Access monitoring:
+- Dagster UI: http://localhost:3000/runs (view pipeline runs, debug asset materializations, and monitor pipeline status)
+- Grafana: http://localhost:3001
+- Prometheus: http://localhost:9090
+
 
 ## API Documentation
 
-The API documentation is available in several formats:
+- [OpenAPI Specification](openapi.json)
+- [Swagger UI](http://localhost:8000/docs)
+- [ReDoc](http://localhost:8000/redoc)
 
-- [OpenAPI Specification](openapi.json) - Complete API specification in JSON format
-- [Swagger UI](http://localhost:8000/docs) - Interactive API documentation (when running)
-- [ReDoc](http://localhost:8000/redoc) - Alternative API documentation (when running)
+### Endpoints
 
-## API Endpoints
-
-The API follows an asynchronous pattern where clients submit prediction requests and then check their status separately.
-
-### Submit Prediction Request
+#### Submit Prediction Request
 ```bash
 POST /predictions
 Content-Type: application/json
@@ -204,34 +162,12 @@ Content-Type: application/json
 }
 ```
 
-**Response**: Returns a run ID that can be used to check the status of the prediction.
-```json
-{
-    "run_id": "123e4567-e89b-12d3-a456-426614174000"
-}
-```
-
-### Get Prediction Result
+#### Get Prediction Result
 ```bash
 GET /predictions/{run_id}
 ```
 
-**Response**: Returns the current status of the prediction. If the prediction is complete, it also includes the prediction result.
-```json
-{
-    "status": "completed",
-    "prediction": 320201.58554044
-}
-```
-
-**Possible Status Values**:
-- `pending`: The prediction request has been received but processing hasn't started
-- `running`: The prediction is currently being processed
-- `completed`: The prediction has been completed successfully
-- `failed`: The prediction failed (includes error details)
-
 ## Project Structure
-
 ```
 .
 ├── src/
@@ -245,6 +181,8 @@ GET /predictions/{run_id}
 │   └── config/            # Configuration and DI container
 ├── models/                # Model artifacts directory
 ├── tests/                # Test suite
+├── prometheus/          # Prometheus configuration
+├── grafana/            # Grafana dashboards
 ├── docker-compose.yml    # Docker services configuration
 ├── docker-compose.dev.yml # Development environment configuration
 ├── Dockerfile           # Application container definition
